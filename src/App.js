@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import './Pom.css';
+import NavBar from './NavBar'
+import Login from './Login'
+import { useState } from 'react';
+import Dashboard from './Dashboard';
+
 
 function App() {
+  let [loggedin, setLoggedin] = useState(false)
+  const login = ()=>{
+    setLoggedin(true)
+  }
+  const logout = ()=>{
+    setLoggedin(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar name={loggedin?"Dashboard":"Authentication"}></NavBar>
+      {/* <Button name="This is functinal component Button"></Button>     */}
+      {
+        loggedin?<Dashboard logout={logout}></Dashboard>:<Login login={login}></Login>
+      }
+      
+    </>
   );
 }
 
