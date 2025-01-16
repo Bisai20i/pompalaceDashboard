@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pompalaceDashboard/static/css/main.72b3e4e5.css",
+    "main.js": "/pompalaceDashboard/static/js/main.0fb1a70c.js",
+    "static/js/453.be68f11f.chunk.js": "/pompalaceDashboard/static/js/453.be68f11f.chunk.js",
+    "index.html": "/pompalaceDashboard/index.html",
+    "main.72b3e4e5.css.map": "/pompalaceDashboard/static/css/main.72b3e4e5.css.map",
+    "main.0fb1a70c.js.map": "/pompalaceDashboard/static/js/main.0fb1a70c.js.map",
+    "453.be68f11f.chunk.js.map": "/pompalaceDashboard/static/js/453.be68f11f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72b3e4e5.css",
+    "static/js/main.0fb1a70c.js"
+  ]
+}
