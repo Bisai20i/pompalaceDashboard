@@ -22,8 +22,9 @@ body{
     transition: 0.3s ease;
 }
 .btn:hover{
-    box-shadow: none;
-    transform: scale(0.95);
+    background: linear-gradient(to bottom right,#3063FF, #C325D1, #A92FFF);
+    background-clip: text;
+    color: transparent;
 }
 
 
