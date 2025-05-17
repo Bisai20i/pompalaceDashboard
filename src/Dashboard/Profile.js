@@ -10,7 +10,7 @@ export default function Profile(props) {
   let [alert, setAlert] = useState({status: false, type:'success', message: "Alert sample"})
   let [updating, setUpdating] = useState(false)
   let [passchange, setPasschange] = useState(false)
-  let isAdmin = user.user_role === 'admin'? true:false;
+  let isAdmin = user.user_role == 'admin'? true:false;
   // console.log(user)
   
 

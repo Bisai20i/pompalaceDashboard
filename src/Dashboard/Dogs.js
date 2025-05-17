@@ -19,7 +19,7 @@ function Dogs() {
       
       try {
         setLoading(true)
-        const response = await fetch(`http://127.0.0.1:8000/api/dogs`, {
+        const response = await fetch(`${process.env.REACT_APP_BASE_URL}dogs`, {
           method: "GET",
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('POM_TOKEN')}`
