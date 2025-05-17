@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../elements/pompalace.png'
 import Input from '../form/Input'
 import Submit from '../form/Submit'
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router-dom'
 
 function Login(props) {
     let { setError, setLoading, login } = props

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../elements/Button'
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router-dom'
 import spinner from '../elements/spinner.gif'
 
 function SidePanal(props) {

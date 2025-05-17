@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import Auth from './Auth'
 import { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
+import './index.css'; 
 
 
 function App() {
