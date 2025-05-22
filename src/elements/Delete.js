@@ -14,7 +14,7 @@ function Delete(props) {
     const deleteDog = async () => {
         setLoading(true)
         try {
-            const response = await fetch(`http://127.0.0.1:8000/api/dogs/${id}`, {
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}dogs/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('POM_TOKEN')}`
@@ -23,7 +23,6 @@ function Delete(props) {
             const data = await response.json()
             setLoading(false)
             setResponse({status:true, message: data.message, success:data.status})
-            console.log(data)
         }
         catch(error){
             console.error("Error:",error)

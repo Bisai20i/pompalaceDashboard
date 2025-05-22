@@ -34,8 +34,8 @@ function DogDetail(props) {
     const hashedSignature = generateSignature(
       total_amount, transaction_uuid, product_code, secret
     )
-    console.log(formData.amount)
-    console.log(hashedSignature)
+    // console.log(formData.amount)
+    // console.log(hashedSignature)
 
     setFormData({
       ...formData,

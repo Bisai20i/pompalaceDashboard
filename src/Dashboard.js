@@ -15,6 +15,7 @@ function Dashboard(props) {
   let [alert, setAlert] = useState({ status: false, type: 'success', message: "Alert sample" })
   let [user, setUser] = useState({})
   let { login } = props
+
   useEffect(() => {
     return (async () => {
       setLoading(true)
@@ -31,7 +32,7 @@ function Dashboard(props) {
 
         if (data.status) {
           setUser(data.data[0])
-          console.log(user)
+          // console.log(user)
           setLoading(false)
 
         }
@@ -65,7 +66,7 @@ function Dashboard(props) {
                 <section className="flex-1 h-full overflow-y-auto relative mt-3 md:mt-0 py-5 px-2 md:py-8 md:px-4" id='container'>
 
                   <Routes>
-                    <Route index path="/" element={<Board user={user} />} />
+                    <Route index path="/" element={<Board  />} />
                     <Route path="/dogs" element={<Dogs user={user} />} />
                     <Route path="/alldogs" element={<AllDogs user={user} />} />
                     <Route path="/profile" element={<Profile user={user} />} />

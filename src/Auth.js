@@ -22,7 +22,7 @@ export default function Auth(props) {
         <img className='h-screen w-full' src="https://th.bing.com/th/id/OIP.ZJNcc_Df-H0DfYVJEweydAHaJQ?rs=1&pid=ImgDetMain" alt="dog" />
       </div>
 
-      <div className='relative md:w-1/2 overflow-y-auto h-screen pt-16 pb-4 w-full px-4 md:px-10 lg:px-20 '>
+      <div className='flex items-center relative md:w-1/2 overflow-y-auto h-screen pt-16 pb-4 w-full px-4 md:px-10 lg:px-20'>
 
         <HashRouter>
 

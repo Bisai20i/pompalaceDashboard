@@ -88,7 +88,7 @@ function Login(props) {
         <>
             {
                 type ?
-                    <>
+                    <div>
                         {/* <article className='p-2 text-xs md:text-sm  border-2 rounded-md mb-2 bg-white border-red-500 shadow-md shadow-purple-400'>
               
               🆗 | Use email as <strong>user@pompalace.com </strong>
@@ -110,9 +110,9 @@ function Login(props) {
                         </p>
                         <p className='w-full flex justify-center p-2'>Don't have an account?</p>
                         <strong className='block w-full text-center'><button onClick={() => { setType(false) }} className='rounded-sm hover:underline hover:ring-purple-500 hover:ring-2 px-4 py-1'>Signup</button></strong>
-                    </>
+                    </div>
                     :
-                    <>
+                    <div>
                         <strong className='text-xl headText '>Sign Up</strong>
                         <form onSubmit={sumbitSignup} className='mt-2'>
                             <Input type="text" name="name" description="Full Name" value={name} setvalue={setName}></Input>
@@ -124,7 +124,7 @@ function Login(props) {
                         </form>
 
                         <strong className='block w-full text-center mt-3'><button onClick={() => { setType(true) }} className='rounded-sm hover:underline hover:ring-purple-500 hover:ring-2 px-4 py-1'>Back</button></strong>
-                    </>
+                    </div>
             }
         </>
 

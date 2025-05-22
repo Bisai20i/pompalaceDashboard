@@ -34,7 +34,7 @@ function ConfirmModal(props) {
 
         }
         else{
-            const response = await fetch('http://127.0.0.1:8000/api/admin/deleteuser',{
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}admin/deleteuser`,{
                 method: "POST",
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('POM_TOKEN')}`,
