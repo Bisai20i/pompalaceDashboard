@@ -17,7 +17,8 @@ function Dashboard(props) {
   let { login } = props
 
   useEffect(() => {
-    return (async () => {
+
+    async function fetchUser(){
       setLoading(true)
 
       try {
@@ -39,6 +40,7 @@ function Dashboard(props) {
         else {
           setLoading(false)
           setAlert({ status: true, type: 'alert', message: "Some Error Occured Please try again Later." })
+          login(false)
         }
 
       }
@@ -47,9 +49,10 @@ function Dashboard(props) {
         localStorage.removeItem("POM_TOKEN")
         login(false)
       }
-
-    })
-
+    }
+      
+    fetchUser();
+    
   }, [])
   return (
     <>
